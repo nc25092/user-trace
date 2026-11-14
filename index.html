@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UserTrace | Public Username Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="logo-mark">UT</div>
+      <div>
+        <p class="eyebrow">OSINT LEARNING PROJECT</p>
+        <h1>UserTrace</h1>
+        <p class="subtitle">Public Username Checker</p>
+      </div>
+    </header>
+
+    <section class="intro">
+      <h2>Search a username</h2>
+      <p>Check whether a username has a public profile on selected platforms.</p>
+    </section>
+
+    <form id="searchForm" class="search-form">
+      <label for="username">Username</label>
+      <div class="input-row">
+        <input id="username" name="username" type="text"
+          placeholder="e.g. john123" autocomplete="off" maxlength="39">
+        <button id="searchButton" type="submit">Search</button>
+      </div>
+      <p class="hint">Enter a username without the @ symbol.</p>
+    </form>
+
+    <section id="status" class="status" aria-live="polite"></section>
+    <section id="results" class="results" aria-label="Search results"></section>
+
+    <div class="actions">
+      <button id="clearButton" class="secondary" type="button">Clear results</button>
+    </div>
+
+    <aside class="notice">
+      <strong>Responsible use</strong>
+      <p>This educational demo only creates links to public profile pages. It does not verify whether an account exists,
+      access private accounts, collect personal information, or prove that profiles belong to the same person.</p>
+    </aside>
+
+    <footer>UserTrace · Educational OSINT prototype</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
